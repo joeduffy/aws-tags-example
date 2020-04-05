@@ -1,0 +1,3 @@
+name: autotag-py
+runtime: python
+description: A Python program that auto-tags AWS resources.
