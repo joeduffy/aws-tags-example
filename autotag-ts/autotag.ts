@@ -1,5 +1,5 @@
 import * as pulumi from "@pulumi/pulumi";
-import { isTaggable } from "./lib";
+import { isTaggable } from "./taggable";
 
 /**
  * registerAutoTags registers a global stack transformation that merges a set
