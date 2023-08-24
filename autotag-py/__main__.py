@@ -23,6 +23,6 @@ group = aws.ec2.SecurityGroup('web-secgrp',
 
 server = aws.ec2.Instance('web-server-www',
     instance_type='t2.micro',
-    ami='ami-0c55b159cbfafe1f0',
+    ami='ami-0a763bef4f952ec08',
     vpc_security_group_ids=[ group.id ],
 )
