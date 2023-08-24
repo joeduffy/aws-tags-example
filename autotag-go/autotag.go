@@ -3,7 +3,7 @@ package main
 import (
 	"reflect"
 
-	"github.com/pulumi/pulumi/sdk/go/pulumi"
+	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
 // registerAutoTags registers a global stack transformation that merges a set
@@ -16,11 +16,11 @@ func registerAutoTags(ctx *pulumi.Context, autoTags map[string]string) {
 				val := ptr.Elem()
 				tags := val.FieldByName("Tags")
 
-				var tagsMap pulumi.Map
+				var tagsMap pulumi.StringMap
 				if !tags.IsZero() {
-					tagsMap = tags.Interface().(pulumi.Map)
+					tagsMap = tags.Interface().(pulumi.StringMap)
 				} else {
-					tagsMap = pulumi.Map(map[string]pulumi.Input{})
+					tagsMap = pulumi.StringMap(map[string]pulumi.StringInput{})
 				}
 				for k, v := range autoTags {
 					tagsMap[k] = pulumi.String(v)
