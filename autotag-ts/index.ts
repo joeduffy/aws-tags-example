@@ -23,6 +23,6 @@ const group = new aws.ec2.SecurityGroup("web-secgrp", {
 
 const server = new aws.ec2.Instance("web-server-www", {
     instanceType: "t2.micro",
-    ami: "ami-0c55b159cbfafe1f0",
+    ami: "ami-0a763bef4f952ec08",
     vpcSecurityGroupIds: [ group.id ],
 });
