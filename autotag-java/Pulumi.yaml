@@ -1,0 +1,3 @@
+name: autotag-java
+runtime: java
+description: A Java program that auto-tags AWS resources.
