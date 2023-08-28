@@ -1,1 +1,5 @@
 Pulumi.*dev.yaml
+
+# IDE Related files
+.vscode
+*.code-workspace
