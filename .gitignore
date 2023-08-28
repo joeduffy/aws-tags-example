@@ -3,6 +3,3 @@ Pulumi.*dev.yaml
 # IDE Related files
 .vscode
 *.code-workspace
-
-# Java build files
-target/
